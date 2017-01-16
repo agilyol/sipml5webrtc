@@ -1,5 +1,5 @@
-# sipml5webrtc
-The file content simpl javascript functions for making calls from the web with using webrtc. I created application base of sipml5 api.
+#webrtc for frameworks
+The file content simple javascript functions for making calls from the web with using webrtc. I created application base of sipml5 api.
 
 	Application Requirements:
 
@@ -14,23 +14,23 @@ Note:  The main js file is sipcall.js which should use for backend part.
 
 Paramaters in below should be pass from backend programming language or framework:
 
-* Disname Ð User display name
-* PrivIdentity Ð User name or private identity 
-* PubIdentity Ð Public identity 
-* Txtpas Ð User password for connecting to network
-* Pnumber Ð Receiver number or Number which user should call
+* Disname - User display name
+* PrivIdentity - User name or private identity 
+* PubIdentity - Public identity 
+* Txtpas - User password for connecting to network
+* Pnumber - Receiver number or Number which user should call
 
 Note: All parameters have default value which was used for test purpose.
 
 	 Functions:
-* sipRegister() Ð use for sign in
-* sipunRegister() Ð use for logout
-* sipCall() Ð use for calling
-* sipMute() Ð use for muting call
-* sipunMute() Ð use for unmute call
-* sipHold() Ð use for hold in line
-* sipResume() Ð use for Resuming call
-* sipTransfer() Ð use for transfer call
+* sipRegister() - use for sign in
+* sipunRegister() - use for logout
+* sipCall() - use for calling
+* sipMute() - use for muting call
+* sipunMute() - use for unmute call
+* sipHold() - use for hold in line
+* sipResume() - use for Resuming call
+* sipTransfer() - use for transfer call
 
 Note: To discontinue (stop) incoming calls you should need to create button with id btnAccept. 
 txtCallStatus - is label id and it can be replaced with span. 
