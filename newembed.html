@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      <script src="js/SIPml-api.js"></script>
+
+
+  </head>
+
+  <body>
+    <div>
+     
+      <label id="txtRegStatus"><i>connection status</i></label> <br/>
+      <label id="txtCallStatus"><i>Call Status</i></label> </br>
+    <label id="IncomingCalls"><i>Unreceived Calls </i></label> </br>
+      <input type="text" id="callno" value="9999" onchange="update_number()">
+
+      <input type="button" value="Call" onclick="sipCall()">
+      <input id="btnAccept" type="button" value="Accept" /> 
+      <input  type="button" value="Register" onclick="sipRegister()" /> 
+      <input  type="button" value="Un Register" onclick="sipUnRegister()" /> 
+      <input type="button" value="Hangup" onclick="sipHangUp()">
+      <input type="button" value="Hold" onclick="sipHold()">
+      <input type="button" value="Resume" onclick="sipResume()">
+      <input type="button" value="Mute" onclick="sipMute()">
+      <input type="button" value="UnMute" onclick="sipunMute()">
+      <!-- the documentation asked for a button like this -->
+    </div>
+
+
+<!--  <div id='divGlassPanel' class='glass-panel' style='visibility:hidden'></div> <!-- this is reguired when making a call (sipCall()). But why? -->
+<!--  <script type="text/javascript" src="js/jquery.js"></script> -->
+
+  <audio id="audio_remote" autoplay="autoplay"> </audio>
+  <audio id="ringtone" loop src="sounds/ringtone.wav"> </audio>
+  <audio id="ringbacktone" loop src="sounds/ringbacktone.wav"> </audio>
+  <audio id="dtmfTone" src="sounds/dtmf.wav"> </audio>
+      <script src="js/sipcall.js"></script>
+  </body>
+</html>
+
+
